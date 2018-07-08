@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="main_container">
+			<div class="checkbox_container">
+				<div>
+					<label for="audio_enabled">Audio</label>
+					<input type="checkbox" id="audio_enabled" checked />
+				</div>
+				<div>
+					<label for="video_enabled">Video</label>
+					<input type="checkbox" id="video_enabled" checked />
+				</div>
+			</div>
+			<div class="video_elem">
+				<video id="video_container" controls></video>
+			</div>
+			<div class="control_buttons">
+				<button onClick="startRecording()" id="start_button">
+					Start Recording
+				</button>
+				<button onClick="stopRecording()" id="stop_button" hidden>
+					Stop Recording
+				</button>
+				<button onClick="replayRecording()" id="replay_button" hidden>
+					Replay Recording
+				</button>
+			</div>
+		</div>
+		<script src="script.js"></script>
+		<script src="https://cdn.webrtc-experiment.com/RecordRTC.js"></script>
+		<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+	</body>
+</html>
