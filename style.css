@@ -1,0 +1,42 @@
+.main_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.checkbox_container {
+    display: flex;
+    justify-content: center;
+}
+
+.checkbox_container > div {
+    margin: 10px
+}
+
+.video_elem {
+    display: flex;
+    justify-content: center;
+}
+
+#video_container {
+    margin: 10px;
+}
+
+.control_buttons {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    border: 0;
+    color: #fff;
+    margin: 10px;
+    padding: 11px;
+    font-size: 13px;
+    border-radius: 2px;
+    background-color: #607D8B;
+}
+
+button:hover, button:focus {
+    background-color: #4f6671;
+}
