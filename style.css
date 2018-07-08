@@ -1,3 +1,9 @@
+.heading_container {
+    display: flex;
+    justify-content: center;
+    color: #607D8B;
+}
+
 .main_container {
     display: flex;
     flex-direction: column;
