@@ -17,7 +17,7 @@ startRecording = function () {
       video: videoEnabled.checked
     }).then(function (stream) {
       startButton.hidden = true;
-      setSrcObject(stream, videoContainer);
+      videoContainer.srcObject = stream;
       videoContainer.play();
       videoContainer.muted = true;
 
@@ -40,7 +40,7 @@ startRecording = function () {
       alert("Cannot access media devices: " + error);
     });
   } else {
-    alert("Some text here");
+    alert("No microphone or camera connected");
   }
 };
 
